@@ -1,0 +1,177 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/*音乐部分*/
+#music{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 3%;
+    top: 2%;
+    z-index: 9;
+}
+
+#music .imgcbg{
+    width: 60px;
+    height: 60px;
+}
+#music .imgImg{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    animation: music 1s infinite linear;
+}
+@keyframes music{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{transform: rotate(360deg)}
+}
+/*第一屏*/
+.swiper-slide.one{
+    background: url("../img/下载.gif");
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.swiper-slide.one .s{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:-10%;
+}
+.swiper-slide.one .h{
+    width: 50%;
+    height: 50%;
+    position:absolute ;
+    bottom: 0;
+    left: 0;
+}
+.swiper-slide.one .e{
+    width: 50%;
+    height: 50%;
+    position:absolute ;
+    bottom: 0;
+    right: 0;
+}
+/*第二屏*/
+.swiper-slide.two{
+    background: url("../img/下载.gif");
+    background-size: 100% 100%;
+    position: relative;
+}
+.swiper-slide.two img{
+    width: 165px;
+    height:165px;
+}
+.swiper-slide.two .bg1{
+    position: absolute;
+    left: 40px;
+    top: 0;
+}
+.swiper-slide.two .bg2{
+    position: absolute;
+    left: 260px;
+    top: 0;
+}
+.swiper-slide.two .bg3{
+    position: absolute;
+    left: 40px;
+    top: 200px;
+}
+.swiper-slide.two .bg4{
+    position: absolute;
+    left: 260px;
+    top: 200px;
+}
+.swiper-slide.two .bg10{
+    position: absolute;
+    left:40px;
+    top: 400px;
+}
+.swiper-slide.two .bg6{
+    position: absolute;
+    left:260px;
+    top: 400px;
+}
+.swiper-slide.two .bg9{
+    position: absolute;
+    left:40px;
+    top: 582px;
+}
+.swiper-slide.two .bg5{
+    position: absolute;
+    left:260px;
+    top: 582px;
+}
+.swiper-slide.two .bg8{
+    width: 280px;
+    height: 280px;
+    z-index: 8;
+}
+/*第三屏*/
+.swiper-slide.three{
+    background: url("../img/下载.gif");
+    background-size: 100% 100%;
+    position: relative;
+}
+.swiper-slide.three .top p{
+    width: 80%;
+    margin: auto;
+  margin-top: 10px;
+}
+.swiper-slide.four{
+    background: url("../img/下载.gif");
+    background-size: 100% 100%;
+    position: relative;
+}
+.swiper-slide.four .top{
+    position: absolute;
+    top: 15%;
+}
+.swiper-slide.four .top img{
+    width: 300px;
+    height: 300px;
+}
+.swiper-slide.five{
+    background: url("../img/下载.gif");
+    background-size: 100% 100%;
+    position: relative;
+}
+.swiper-slide.five .top .bg11{
+    width: 300px;
+    height: 300px;
+}
